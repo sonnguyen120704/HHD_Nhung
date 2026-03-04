@@ -1,15 +1,37 @@
-# Bài tập Hệ điều hành Nhúng: U-Boot và Kernel
+Bài tập HĐH Nhúng: U-Boot & Kernel
+Mục tiêu
 
-## Nội dung thực hiện
+Biên dịch và khởi động U-Boot và Linux Kernel trên BeagleBone Black.
 
-### U-Boot
-- Biên dịch U-Boot thành công (MLO, u-boot.img)
-- Tạo phân vùng thẻ nhớ và cài đặt U-Boot cho BBB
-- U-Boot khởi động thành công qua UART
-- Hiển thị thông tin phần cứng và sử dụng được lệnh U-Boot
+Nội dung thực hiện
+U-Boot
 
-### Linux Kernel
-- Biên dịch Kernel cho BBB (zImage, dtb)
-- Chép kernel và dtb vào thẻ nhớ
-- Load kernel và dtb lên RAM, boot bằng lệnh `bootz`
-- Kernel khởi động thành công và chờ rootfs
+Biên dịch U-Boot bằng toolchain ARM
+
+Cài đặt MLO và u-boot.img lên thẻ nhớ
+
+Khởi động U-Boot và kiểm tra qua UART
+
+Kernel
+
+Biên dịch Kernel (zImage + dtb)
+
+Load kernel và dtb từ U-Boot
+
+Khởi động kernel bằng lệnh bootz
+
+Kết quả
+
+U-Boot chạy thành công
+
+Kernel boot thành công và hiển thị log
+
+Môi trường
+
+Ubuntu
+
+arm-linux-gnueabihf
+
+BeagleBone Black
+
+UART debug
